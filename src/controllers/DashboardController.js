@@ -3,15 +3,9 @@ const JobUtils = require("../utils/JobUtils");
 const Profile = require("../model/Profile");
 
 module.exports = {
-<<<<<<< HEAD
   async index(req, res) {
     const jobs = await Job.get();
     const profile = await Profile.get();
-=======
-  index(req, res) {
-    const jobs = Job.get();
-    const profile = Profile.get();
->>>>>>> 21872c036ecb29140075bb0efc6796ee3c01655f
 
     let statusCount = {
       progress: 0,
