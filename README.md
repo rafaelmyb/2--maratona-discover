@@ -21,6 +21,35 @@
   <img alt="dev.finances" src=".github/jobscalc.png" width="100%">
 </p>
 
+## Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina:
+
+- Git
+- Node v14 ou superior
+- NPM ou YARN
+
+### Rodando o jobs-calc
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/rafaelmyb/JobsCalc.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd JobsCalc
+
+# Instale as dependências
+$ npm install
+
+# Inicie o banco de dados
+$ npm run init-db
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+```
+
+Ou baixe os arquivos e comece os passos instalando as dependências
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:

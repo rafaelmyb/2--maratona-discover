@@ -6,8 +6,8 @@ aside.card {
   background: var(--color-card-background);
   color: var(--color-card-title);
 
-  border: 1px solid #E1E3E6;
-  border-radius: .313rem;
+  border: 1px solid var(--color-aside-border);
+  border-radius: 0.313rem;
 
   width: 22rem;
 
@@ -21,7 +21,7 @@ aside.card {
 aside img {
   border-radius: 50%;
 
-  border: .25rem var(--color-secondary) solid;
+  border: 0.25rem var(--color-secondary) solid;
 
   width: 11.25rem;
   height: 11.25rem;
@@ -34,7 +34,6 @@ aside h2 {
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 1.875rem;
-
 
   margin-bottom: 3.875rem;
 }
@@ -50,4 +49,45 @@ aside p {
 
 main {
   flex: 1;
+}
+
+#dark-mode-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dark-mode-button p {
+  color: var(--color-card-title);
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+#dark-mode-button label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: var(--color-mode-switcher);
+  float: right;
+  border-radius: 100px;
+  position: relative;
+  margin: 0;
+}
+
+#dark-mode-button label::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+#switch:checked + label::before {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
 }
