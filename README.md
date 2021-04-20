@@ -29,7 +29,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 - Node v14 ou superior
 - NPM ou YARN
 
-### Rodando o jobs-calc
+### Rodando o JobsCalc
 
 ```bash
 # Clone este repositório
